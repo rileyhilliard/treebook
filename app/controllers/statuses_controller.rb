@@ -44,10 +44,10 @@ class StatusesController < ApplicationController
 
     respond_to do |format|
       if @status.save
-        format.html { redirect_to @status, notice: 'Status was successfully created.' }
+        format.html { redirect_to @status, :notice => "Status was successfully created." }
         format.json { render json: @status, status: :created, location: @status }
       else
-        format.html { render action: "new" }
+        format.html { render action: "new", :alert => "Something didnt work quite right, check your work." }
         format.json { render json: @status.errors, status: :unprocessable_entity }
       end
     end
@@ -60,10 +60,10 @@ class StatusesController < ApplicationController
 
     respond_to do |format|
       if @status.update_attributes(params[:status])
-        format.html { redirect_to @status, notice: 'Status was successfully updated.' }
+        format.html { redirect_to @status, :notice => "Status was successfully updated." }
         format.json { head :no_content }
       else
-        format.html { render action: "edit" }
+        format.html { render action: "edit", :alert => "Something didnt work quite right, check your work." }
         format.json { render json: @status.errors, status: :unprocessable_entity }
       end
     end
@@ -76,7 +76,7 @@ class StatusesController < ApplicationController
     @status.destroy
 
     respond_to do |format|
-      format.html { redirect_to statuses_url }
+      format.html { redirect_to statuses_url, :notice => "Status has been deleted."  }
       format.json { head :no_content }
     end
   end
