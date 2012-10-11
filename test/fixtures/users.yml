@@ -4,4 +4,12 @@ riley:
     email: "youhoooot@yahoo.com"
     profile_name: "rileyh"
     encrypted_password: "123456"
+    
+john:
+    first_name: "John"
+    last_name: "Doe"
+    email: "fdsfdsfd@yahoo.com"
+    profile_name: "jdoh"
+    encrypted_password: "123456"   
+        
        
