@@ -9,9 +9,6 @@ if defined?(Bundler)
   # Bundler.require(:default, :assets, Rails.env)
 end
 
-# Heroku requires this to be false
-config.assets.initialize_on_precompile=false
-
 module Treebook
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
