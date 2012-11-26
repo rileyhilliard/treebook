@@ -7,6 +7,7 @@ gem 'rails', '3.2.8'
 
 gem 'devise'
 gem 'simple_form'
+gem 'json'
 
 group :development, :test do
   gem 'sqlite3'
@@ -31,7 +32,6 @@ group :assets do
 end
 
 gem 'jquery-rails'
-
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
