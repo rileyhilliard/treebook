@@ -8,6 +8,8 @@ gem 'rails', '3.2.8'
 gem 'devise'
 gem 'simple_form'
 gem 'json'
+gem 'nifty-generators'
+gem 'geocoder'
 
 group :development, :test do
   gem 'sqlite3'
@@ -46,3 +48,5 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+gem "mocha", :group => :test
