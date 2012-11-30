@@ -19,6 +19,10 @@ class User < ActiveRecord::Base
                         }
   
   has_many :statuses
+  has_one :location
+  
+  require 'open-uri'
+  require 'json'
   
   def full_name 
     first_name + " " + last_name
@@ -31,5 +35,7 @@ class User < ActiveRecord::Base
     
     "http://gravatar.com/avatar/#{hash}"
   end
+  
+  
   
 end

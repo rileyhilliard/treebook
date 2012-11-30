@@ -1,4 +1,6 @@
 Treebook::Application.routes.draw do
+  resources :locations
+
   get "profiles/show"
 
   devise_for :users
