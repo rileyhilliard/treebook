@@ -10,6 +10,8 @@ Treebook::Application.routes.draw do
     # get '/:id', to: 'profiles#show', as: :profile
   end
   
+  resources :user_friendships
+  
 
   resources :statuses
   get 'feed', to: "statuses#index", as: :feed
