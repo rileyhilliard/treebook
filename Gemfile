@@ -8,7 +8,6 @@ gem 'rails', '3.2.8'
 gem 'devise'
 gem 'simple_form'
 gem 'json'
-gem 'shoulda'
 
 group :development, :test do
   gem 'sqlite3'
